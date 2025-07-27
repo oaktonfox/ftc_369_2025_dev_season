@@ -29,8 +29,8 @@ void loop() {
   }
 
   
-// if direction is 1, starting is 0, and end is 180
-// if direction is -1, starting is 180, and end is 0
+// if direction is 1, starting is 180, and end is 0
+// if direction is -1, starting is 0, and end is 180
   for(int i=0; i<number_of_servos; i++){
     board1.setPWM(i, 0, angleToPulse(90+90*direction_array[i]));
   }
